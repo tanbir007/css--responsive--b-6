@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta Name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/7792c6808a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Gadget FreakBD</title>
+    <style>body {
+        margin: 0 auto;
+    
+    }
+    
+    .container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 1em;
+        row-gap: 1em;
+    
+    }
+    
+    .box img {
+        width: 100%;
+    }
+    
+    .box {
+        background-color: rgba(127, 244, 255, 0.21);
+        border-radius: 5px;
+        border: 2px solid rgba(16, 15, 3, 0.769);
+        padding: 5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    
+    .box2 {
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 10px;
+    
+    }
+    
+    .box2 button {
+        background-color: rgba(218, 165, 32, 0.687);
+        height: 40px;
+        width: 50%;
+        border: 1px solid gray;
+        border-radius: 5px;
+        ;
+    }
+    .box2 button:hover{
+        background-color: rgba(81, 255, 0, 0.646);
+        padding: 5px;
+        transition:ease-out .4s;
+    }
+    
+    @media screen and (max-width: 768px) {
+        .container {
+            grid-template-columns: repeat(1, 1fr);
+        }
+        .navbar{
+            display:grid;
+            
+        }
+    
+    }
+    
+    @media screen and (min-width: 769px) and (max-width:992px) {
+        .container {
+            grid-template-columns: repeat(2, 1fr)
+        }
+    
+    }
+    .navbar nav{
+        padding: 20px;
+        height:30px;
+        display: flex;
+        justify-content:space-around;
+        background-image: linear-gradient(180deg ,rgba(94, 255, 0, 0.059),rgba(0, 255, 255, 0.379),rgba(255, 153, 0, 0.046));
+        
+       
+    }
+    nav a{
+        margin-left: 20px;
+        color:rgba(48, 32, 218, 0.842);
+        font-size: 1.5rem;
+        text-decoration: none;
+    }
+    
+    nav a:hover{
+        background-color: #fff;
+        border-radius: 5px;
+        color:rgb(0, 0, 0);
+        padding:5px;
+        transition:ease-in .2S;
+    }
+    .fa-solid{
+        color:goldenrod;
+    }
+    #log-out{
+         color:rgba(137, 43, 226, 0.616);
+         margin-right: 5px;
+         
+        }
+        .fa-sack-dollar{
+            color:royalblue;
+            margin-right: 5px;
+        }
+        
+    .footer-container {
+    
+    padding-top: 10px;
+    height: 100%;
+    margin-top: 5%;
+    background-color: rgba(0, 161, 67, 0.386);
+    
+    }
+    
+    .footer-container h1{
+    text-align: center;
+    color:rgba(15, 30, 168, 0.692);
+    font-family: 'Lobster', cursive;
+    }
+    .footer-container p{
+    text-align: center;
+    color:rgba(0, 25, 214, 0.877);
+    font-size: 20px;
+    }</style>
+
+</head>
+
+<body>
+  <div class="navbar">
+    <nav>
+       <span>
+        <a href="">Home</a>
+        <a href="">Cart</a>
+        <a href="">Blog</a>
+       </span>
+        <span>
+            <a href="">Dashboard</a>
+        <a href=""><i id="log-out" class="fa-solid fa-right-from-bracket"></i>Log Out</a>
+        </span>
+    </nav>
+
+  </div>
+    <div class="container">
+    
+        <div class="box"> <img src="images/img1.jpg" alt="" />
+
+            <div class="box2">
+                <h3> <i class="fa-brands fa-product-hunt"></i>Xiaomi Fan</h3>
+                <p><i class="fa-solid fa-sack-dollar"></i> 300$</p>
+                <p>rating:   <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i></p>
+                   <div class="product-details">
+                    <p>Product Detail</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, consequatur esse. Facere tenetur quisquam quia ratione molestias, velit facilis! Rerum earum placeat aut illum?</p>
+                   </div>
+                <button>Order Now</button>
+            </div>
+        </div>
+        <div class="box"> <img src="images/img2.jpg" alt="" />
+
+            <div class="box2">
+                <h3><i class="fa-brands fa-product-hunt"></i> watch</h3>
+                <p><i class="fa-solid fa-sack-dollar"></i> 300$</p>
+                <p>rating:   <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i></p>
+                    <div class="product-details">
+                        <p>Product Detail</p>
+                        <p>Lorem ipsum dolor sit amet consec Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque, animi.illum?</p>
+                       </div>
+                <button>Order Now</button>
+            </div>
+        </div>
+        <div class="box"> <img src="images/img3.jpg" alt="" />
+            <div class="box2">
+                <h3><i class="fa-brands fa-product-hunt"></i> watch</h3>
+                <p><i class="fa-solid fa-sack-dollar"></i> 300$</p>
+                <p>rating:  <i class="fa-solid fa-star"></i>
+                    
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i>
+                </p>
+                <div class="product-details">
+                    <p>Product Detail</p>
+                    <p>Lorem ipsum dolor sit amet consec Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque, animi.illum?</p>
+                   </div>
+                    
+                <button>Order Now</button>
+            </div>
+
+        </div>
+        <div class="box"> <img src="images/img4.jpg" alt="" />
+            <div class="box2">
+                <h3><i class="fa-brands fa-product-hunt"></i> watch</h3>
+                <p><i class="fa-solid fa-sack-dollar"></i> 300$</p>
+                <p>rating: 
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </p><div class="product-details">
+                    <p>Product Detail</p>
+                    <p>Lorem ipsum dolor sit amet consec Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque, animi.illum?</p>
+                   </div>
+                <button>Order Now</button>
+            </div>
+
+        </div>
+        <div class="box"> <img src="images/img5.jpg" alt="" />
+            <div class="box2">
+                <h3><i class="fa-brands fa-product-hunt"></i> watch</h3>
+                <p><i class="fa-solid fa-sack-dollar"></i> 300$</p>
+                <p>rating: 
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </p><div class="product-details">
+                    <p>Product Detail</p>
+                    <p>Lorem ipsum dolor sit amet consec Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque, animi.illum?</p>
+                   </div>
+                <button>Order Now</button>
+            </div>
+
+        </div>
+        <div class="box"> <img src="images/img6.jpg" alt="" />
+
+            <div class="box2">
+                <h3><i class="fa-brands fa-product-hunt"></i> watch</h3>
+                <p><i class="fa-solid fa-sack-dollar"></i> 300$</p>
+                <p>rating: 
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </p><div class="product-details">
+                    <p>Product Detail</p>
+                    <p>Lorem ipsum dolor sit amet consec Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque, animi.illum?</p>
+                   </div>
+                <button>Order Now</button>
+            </div>
+        </div>
+        <div class="box"> <img src="images/img7.jpg" alt="" />
+
+            <div class="box2">
+                <h3><i class="fa-brands fa-product-hunt"></i> watch</h3>
+                <p><i class="fa-solid fa-sack-dollar"></i> 300$</p>
+                <p>rating: 
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </p><div class="product-details">
+                    <p>Product Detail</p>
+                    <p>Lorem ipsum dolor sit amet consec Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque, animi.illum?</p>
+                   </div>
+                <button>Order Now</button>
+            </div>
+        </div>
+        <div class="box"> <img src="images/img8.jpg" alt="" />
+            <div class="box2">
+                <h3><i class="fa-brands fa-product-hunt"></i> watch</h3>
+                <p><i class="fa-solid fa-sack-dollar"></i> 300$</p>
+                <p>rating: 
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </p><div class="product-details">
+                    <p>Product Detail</p>
+                    <p>Lorem ipsum dolor sit amet consec Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque, animi.illum?</p>
+                   </div>
+                <button>Order Now</button>
+            </div>
+
+        </div>
+        <div class="box"> <img src="images/img9.jpg" alt="" />
+
+            <div class="box2">
+                <h3><i class="fa-brands fa-product-hunt"></i> watch</h3>
+                <p><i class="fa-solid fa-sack-dollar"></i> 300$</p>
+                <p>rating: 
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </p><div class="product-details">
+                    <p>Product Detail</p>
+                    <p>Lorem ipsum dolor sit amet consec Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque, animi.illum?</p>
+                   </div>
+                <button>Order Now</button>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-container">
+            <h1>"GadGet FreakBD"</h1>
+            <p>Quality is our power</p>
+            <p>GET IN TOUCH</p>
+            <p>
+                ✆ +880-1717385968 <br />
+                🅴🅼🅰🅸🅻 tanbir.1121@gmail.com
+            </p>
+
+        </div>
+
+    </footer>
+</body>
+
+</html>
